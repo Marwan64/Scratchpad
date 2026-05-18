@@ -6,25 +6,27 @@ struct FloatingCountdownView: View {
 
     @State private var pulse = false
 
-    private var isUrgent: Bool { note?.isUrgent ?? false }
-
-    private var timeString: String {
-        guard let note, !note.isExpired else { return "—" }
-        return note.formattedTimeRemaining
+    var body: some View {
+        // TimelineView re-renders every second so Date()-based computed
+        // properties (formattedTimeRemaining, progressFraction) stay live.
+        TimelineView(.periodic(from: .now, by: 1)) { _ in
+            pill
+        }
+        .onAppear { updatePulse() }
+        .onChange(of: note?.isUrgent ?? false) { _, _ in updatePulse() }
     }
 
-    var body: some View {
+    private var pill: some View {
         HStack(spacing: 6) {
             MiniExpirationRing(
                 progress: note?.progressFraction ?? 0,
-                isUrgent: isUrgent,
+                isUrgent: note?.isUrgent ?? false,
                 theme: theme
             )
             Text(timeString)
                 .font(.system(size: 11, weight: .semibold, design: .monospaced))
-                .foregroundStyle(isUrgent ? theme.urgentColor : theme.subtleText)
+                .foregroundStyle((note?.isUrgent ?? false) ? theme.urgentColor : theme.subtleText)
                 .contentTransition(.numericText())
-                .animation(.linear(duration: 1), value: timeString)
         }
         .padding(.horizontal, 10)
         .padding(.vertical, 6)
@@ -34,7 +36,7 @@ struct FloatingCountdownView: View {
                 .overlay {
                     Capsule()
                         .strokeBorder(
-                            isUrgent
+                            (note?.isUrgent ?? false)
                                 ? theme.urgentColor.opacity(0.5)
                                 : theme.dividerColor,
                             lineWidth: 0.5
@@ -42,12 +44,16 @@ struct FloatingCountdownView: View {
                 }
         }
         .scaleEffect(pulse ? 1.04 : 1.0)
-        .onAppear { startPulseIfNeeded() }
-        .onChange(of: isUrgent) { _, _ in startPulseIfNeeded() }
     }
 
-    private func startPulseIfNeeded() {
-        if isUrgent {
+    private var timeString: String {
+        guard let note, !note.isExpired else { return "—" }
+        return note.formattedTimeRemaining
+    }
+
+    private func updatePulse() {
+        let urgent = note?.isUrgent ?? false
+        if urgent {
             withAnimation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true)) {
                 pulse = true
             }
