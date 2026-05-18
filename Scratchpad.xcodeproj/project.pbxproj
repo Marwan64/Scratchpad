@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		SP0101 /* ScratchpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0001 /* ScratchpadApp.swift */; };
+		SP0102 /* ScratchpadNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0002 /* ScratchpadNote.swift */; };
+		SP0103 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0003 /* AppTheme.swift */; };
+		SP0104 /* ExpirationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0004 /* ExpirationState.swift */; };
+		SP0105 /* NoteStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0005 /* NoteStorageService.swift */; };
+		SP0106 /* ExpirationTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0006 /* ExpirationTimerService.swift */; };
+		SP0107 /* WidgetSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0007 /* WidgetSyncService.swift */; };
+		SP0108 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0008 /* NotificationService.swift */; };
+		SP0109 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0009 /* PurchaseManager.swift */; };
+		SP0110 /* ScratchpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0010 /* ScratchpadView.swift */; };
+		SP0111 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0011 /* OnboardingView.swift */; };
+		SP0112 /* ExpiredNoteAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0012 /* ExpiredNoteAnimationView.swift */; };
+		SP0113 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0013 /* SettingsView.swift */; };
+		SP0114 /* WidgetUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0014 /* WidgetUpgradeView.swift */; };
+		SP0115 /* CountdownRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0015 /* CountdownRing.swift */; };
+		SP0116 /* FloatingPinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0016 /* FloatingPinButton.swift */; };
+		SP0117 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0017 /* EmptyStateView.swift */; };
+		SP0118 /* TypingPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0018 /* TypingPlaceholderView.swift */; };
+		SP0119 /* DestructionAnimationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0019 /* DestructionAnimationOverlay.swift */; };
+		SP0120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = SP0020 /* Assets.xcassets */; };
+		WE0101 /* ScratchpadWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = WE0001 /* ScratchpadWidget.swift */; };
+		WE0102 /* ScratchpadWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = WE0002 /* ScratchpadWidgetBundle.swift */; };
+		WE0103 /* ScratchpadWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = WE0003 /* ScratchpadWidgetProvider.swift */; };
+		WE0104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = WE0004 /* Assets.xcassets */; };
+		WE0105 /* ScratchpadWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = PR0002 /* ScratchpadWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		WE0106 /* ScratchpadWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = WE0007 /* ScratchpadWidgetView.swift */; };
+		WE0107 /* ScratchpadIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = WE0008 /* ScratchpadIntent.swift */; };
+		SP0122 /* WidgetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0022 /* WidgetState.swift */; };
+		SP0123 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0023 /* HapticManager.swift */; };
+		SP0124 /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0024 /* DeepLinkManager.swift */; };
+		SP0125 /* FloatingCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0025 /* FloatingCountdownView.swift */; };
+		SP0126 /* MinimalTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0026 /* MinimalTextEditor.swift */; };
+		SP0127 /* WidgetStyleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0027 /* WidgetStyleBackground.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		SP0200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PJ0001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = TG0002;
+			remoteInfo = ScratchpadWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BP0005 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				WE0105 /* ScratchpadWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		PR0001 /* Scratchpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scratchpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		PR0002 /* ScratchpadWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScratchpadWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		SP0001 /* ScratchpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadApp.swift; sourceTree = "<group>"; };
+		SP0002 /* ScratchpadNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadNote.swift; sourceTree = "<group>"; };
+		SP0003 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		SP0004 /* ExpirationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationState.swift; sourceTree = "<group>"; };
+		SP0005 /* NoteStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStorageService.swift; sourceTree = "<group>"; };
+		SP0006 /* ExpirationTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationTimerService.swift; sourceTree = "<group>"; };
+		SP0007 /* WidgetSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSyncService.swift; sourceTree = "<group>"; };
+		SP0008 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		SP0009 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		SP0010 /* ScratchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadView.swift; sourceTree = "<group>"; };
+		SP0011 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		SP0012 /* ExpiredNoteAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredNoteAnimationView.swift; sourceTree = "<group>"; };
+		SP0013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		SP0014 /* WidgetUpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUpgradeView.swift; sourceTree = "<group>"; };
+		SP0015 /* CountdownRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownRing.swift; sourceTree = "<group>"; };
+		SP0016 /* FloatingPinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPinButton.swift; sourceTree = "<group>"; };
+		SP0017 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		SP0018 /* TypingPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingPlaceholderView.swift; sourceTree = "<group>"; };
+		SP0019 /* DestructionAnimationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructionAnimationOverlay.swift; sourceTree = "<group>"; };
+		SP0020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		SP0021 /* Scratchpad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scratchpad.entitlements; sourceTree = "<group>"; };
+		WE0001 /* ScratchpadWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadWidget.swift; sourceTree = "<group>"; };
+		WE0002 /* ScratchpadWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadWidgetBundle.swift; sourceTree = "<group>"; };
+		WE0003 /* ScratchpadWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadWidgetProvider.swift; sourceTree = "<group>"; };
+		WE0004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		WE0005 /* ScratchpadWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchpadWidget.entitlements; sourceTree = "<group>"; };
+		WE0006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		WE0007 /* ScratchpadWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadWidgetView.swift; sourceTree = "<group>"; };
+		WE0008 /* ScratchpadIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadIntent.swift; sourceTree = "<group>"; };
+		SP0022 /* WidgetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetState.swift; sourceTree = "<group>"; };
+		SP0023 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		SP0024 /* DeepLinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
+		SP0025 /* FloatingCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingCountdownView.swift; sourceTree = "<group>"; };
+		SP0026 /* MinimalTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTextEditor.swift; sourceTree = "<group>"; };
+		SP0027 /* WidgetStyleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStyleBackground.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		GR0001 = {
+			isa = PBXGroup;
+			children = (
+				GR0002 /* Scratchpad */,
+				GR0008 /* ScratchpadWidget */,
+				GR0007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GR0002 /* Scratchpad */ = {
+			isa = PBXGroup;
+			children = (
+				SP0001 /* ScratchpadApp.swift */,
+				SP0021 /* Scratchpad.entitlements */,
+				GR0003 /* Models */,
+				GR0004 /* Services */,
+				GR0005 /* Views */,
+				GR0006 /* Components */,
+				SP0020 /* Assets.xcassets */,
+			);
+			path = Scratchpad;
+			sourceTree = "<group>";
+		};
+		GR0003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				SP0002 /* ScratchpadNote.swift */,
+				SP0003 /* AppTheme.swift */,
+				SP0004 /* ExpirationState.swift */,
+				SP0022 /* WidgetState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GR0004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				SP0005 /* NoteStorageService.swift */,
+				SP0006 /* ExpirationTimerService.swift */,
+				SP0007 /* WidgetSyncService.swift */,
+				SP0008 /* NotificationService.swift */,
+				SP0009 /* PurchaseManager.swift */,
+				SP0023 /* HapticManager.swift */,
+				SP0024 /* DeepLinkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GR0005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				SP0010 /* ScratchpadView.swift */,
+				SP0011 /* OnboardingView.swift */,
+				SP0012 /* ExpiredNoteAnimationView.swift */,
+				SP0013 /* SettingsView.swift */,
+				SP0014 /* WidgetUpgradeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GR0006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				SP0015 /* CountdownRing.swift */,
+				SP0016 /* FloatingPinButton.swift */,
+				SP0017 /* EmptyStateView.swift */,
+				SP0018 /* TypingPlaceholderView.swift */,
+				SP0019 /* DestructionAnimationOverlay.swift */,
+				SP0025 /* FloatingCountdownView.swift */,
+				SP0026 /* MinimalTextEditor.swift */,
+				SP0027 /* WidgetStyleBackground.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		GR0007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PR0001 /* Scratchpad.app */,
+				PR0002 /* ScratchpadWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GR0008 /* ScratchpadWidget */ = {
+			isa = PBXGroup;
+			children = (
+				WE0001 /* ScratchpadWidget.swift */,
+				WE0002 /* ScratchpadWidgetBundle.swift */,
+				WE0003 /* ScratchpadWidgetProvider.swift */,
+				WE0004 /* Assets.xcassets */,
+				WE0005 /* ScratchpadWidget.entitlements */,
+				WE0006 /* Info.plist */,
+				WE0007 /* ScratchpadWidgetView.swift */,
+				WE0008 /* ScratchpadIntent.swift */,
+			);
+			path = ScratchpadWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TG0001 /* Scratchpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL0001 /* Build configuration list for PBXNativeTarget "Scratchpad" */;
+			buildPhases = (
+				BP0001 /* Sources */,
+				BP0002 /* Resources */,
+				BP0005 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				SP0210 /* PBXTargetDependency */,
+			);
+			name = Scratchpad;
+			productName = Scratchpad;
+			productReference = PR0001 /* Scratchpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TG0002 /* ScratchpadWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL0003 /* Build configuration list for PBXNativeTarget "ScratchpadWidget" */;
+			buildPhases = (
+				BP0003 /* Sources */,
+				BP0004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScratchpadWidget;
+			productName = ScratchpadWidget;
+			productReference = PR0002 /* ScratchpadWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PJ0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TG0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TG0002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CL0002 /* Build configuration list for PBXProject "Scratchpad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GR0001;
+			productRefGroup = GR0007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TG0001 /* Scratchpad */,
+				TG0002 /* ScratchpadWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BP0002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SP0120 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BP0004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				WE0104 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BP0001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SP0101 /* ScratchpadApp.swift in Sources */,
+				SP0102 /* ScratchpadNote.swift in Sources */,
+				SP0103 /* AppTheme.swift in Sources */,
+				SP0104 /* ExpirationState.swift in Sources */,
+				SP0105 /* NoteStorageService.swift in Sources */,
+				SP0106 /* ExpirationTimerService.swift in Sources */,
+				SP0107 /* WidgetSyncService.swift in Sources */,
+				SP0108 /* NotificationService.swift in Sources */,
+				SP0109 /* PurchaseManager.swift in Sources */,
+				SP0110 /* ScratchpadView.swift in Sources */,
+				SP0111 /* OnboardingView.swift in Sources */,
+				SP0112 /* ExpiredNoteAnimationView.swift in Sources */,
+				SP0113 /* SettingsView.swift in Sources */,
+				SP0114 /* WidgetUpgradeView.swift in Sources */,
+				SP0115 /* CountdownRing.swift in Sources */,
+				SP0116 /* FloatingPinButton.swift in Sources */,
+				SP0117 /* EmptyStateView.swift in Sources */,
+				SP0118 /* TypingPlaceholderView.swift in Sources */,
+				SP0119 /* DestructionAnimationOverlay.swift in Sources */,
+				SP0122 /* WidgetState.swift in Sources */,
+				SP0123 /* HapticManager.swift in Sources */,
+				SP0124 /* DeepLinkManager.swift in Sources */,
+				SP0125 /* FloatingCountdownView.swift in Sources */,
+				SP0126 /* MinimalTextEditor.swift in Sources */,
+				SP0127 /* WidgetStyleBackground.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BP0003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				WE0101 /* ScratchpadWidget.swift in Sources */,
+				WE0102 /* ScratchpadWidgetBundle.swift in Sources */,
+				WE0103 /* ScratchpadWidgetProvider.swift in Sources */,
+				WE0106 /* ScratchpadWidgetView.swift in Sources */,
+				WE0107 /* ScratchpadIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		SP0210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = TG0002 /* ScratchpadWidget */;
+			targetProxy = SP0200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989PMGWJ2L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Scratchpad;
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Scratchpad uses notifications to remind you before your note expires.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scratchpad.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989PMGWJ2L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Scratchpad;
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Scratchpad uses notifications to remind you before your note expires.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scratchpad.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchpadWidget/ScratchpadWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989PMGWJ2L;
+				INFOPLIST_FILE = ScratchpadWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scratchpad.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF0006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchpadWidget/ScratchpadWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989PMGWJ2L;
+				INFOPLIST_FILE = ScratchpadWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scratchpad.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CL0001 /* Build configuration list for PBXNativeTarget "Scratchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0003 /* Debug */,
+				CF0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CL0002 /* Build configuration list for PBXProject "Scratchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0001 /* Debug */,
+				CF0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CL0003 /* Build configuration list for PBXNativeTarget "ScratchpadWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0005 /* Debug */,
+				CF0006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PJ0001 /* Project object */;
+}
