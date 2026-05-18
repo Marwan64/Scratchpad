@@ -40,6 +40,7 @@
 		SP0125 /* FloatingCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0025 /* FloatingCountdownView.swift */; };
 		SP0126 /* MinimalTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0026 /* MinimalTextEditor.swift */; };
 		SP0127 /* WidgetStyleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0027 /* WidgetStyleBackground.swift */; };
+		SP0128 /* ScratchpadEditorBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = SP0028 /* ScratchpadEditorBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		SP0025 /* FloatingCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingCountdownView.swift; sourceTree = "<group>"; };
 		SP0026 /* MinimalTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTextEditor.swift; sourceTree = "<group>"; };
 		SP0027 /* WidgetStyleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStyleBackground.swift; sourceTree = "<group>"; };
+		SP0028 /* ScratchpadEditorBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchpadEditorBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -178,6 +180,7 @@
 				SP0025 /* FloatingCountdownView.swift */,
 				SP0026 /* MinimalTextEditor.swift */,
 				SP0027 /* WidgetStyleBackground.swift */,
+				SP0028 /* ScratchpadEditorBackground.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				SP0125 /* FloatingCountdownView.swift in Sources */,
 				SP0126 /* MinimalTextEditor.swift in Sources */,
 				SP0127 /* WidgetStyleBackground.swift in Sources */,
+				SP0128 /* ScratchpadEditorBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

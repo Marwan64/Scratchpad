@@ -48,19 +48,9 @@ struct ScratchpadView: View {
             VStack(spacing: 0) {
                 topBar
                     .background(.ultraThinMaterial)
-                    .overlay(alignment: .bottom) {
-                        Rectangle()
-                            .fill(theme.dividerColor)
-                            .frame(height: 0.5)
-                    }
                 Spacer()
                 bottomBar
                     .background(.ultraThinMaterial)
-                    .overlay(alignment: .top) {
-                        Rectangle()
-                            .fill(theme.dividerColor)
-                            .frame(height: 0.5)
-                    }
             }
             .ignoresSafeArea(edges: .bottom)
 

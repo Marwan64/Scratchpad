@@ -51,6 +51,15 @@ enum AppTheme: String, CaseIterable, Codable {
         }
     }
 
+    var secondaryAccentColor: Color {
+        switch self {
+        case .light:     return Color(red: 0.20, green: 0.78, blue: 0.68)
+        case .dark:      return Color(red: 0.28, green: 0.78, blue: 0.62)
+        case .warmPaper: return Color(red: 0.26, green: 0.56, blue: 0.48)
+        case .midnight:  return Color(red: 0.25, green: 0.74, blue: 0.95)
+        }
+    }
+
     var urgentColor: Color {
         switch self {
         case .warmPaper: return Color(red: 0.85, green: 0.35, blue: 0.20)
@@ -59,6 +68,8 @@ enum AppTheme: String, CaseIterable, Codable {
     }
 
     var dividerColor: Color { textColor.opacity(0.08) }
+    var editorRuleColor: Color { textColor.opacity(self == .warmPaper ? 0.07 : 0.045) }
+    var editorAccentWash: Color { accentColor.opacity(self == .light ? 0.06 : 0.10) }
 
     var preferredColorScheme: ColorScheme? {
         switch self {

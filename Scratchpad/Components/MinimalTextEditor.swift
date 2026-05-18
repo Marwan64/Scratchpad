@@ -65,10 +65,11 @@ struct MinimalTextEditor: UIViewRepresentable {
         bar.items = [spacer, done]
         bar.tintColor = UIColor(theme.accentColor)
 
-        // Match bar background to theme
+        // Match bar background to theme with a hairline separator above the keyboard
         let appearance = UIToolbarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(theme.surfaceColor).withAlphaComponent(0.95)
+        appearance.shadowColor = UIColor(theme.textColor).withAlphaComponent(0.08)
         bar.standardAppearance = appearance
         bar.compactAppearance = appearance
 

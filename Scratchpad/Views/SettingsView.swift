@@ -25,10 +25,7 @@ struct MinimalSettingsView: View {
                                 }
                             } label: {
                                 HStack(spacing: 14) {
-                                    Image(systemName: t.iconName)
-                                        .font(.system(size: 16))
-                                        .foregroundStyle(t.accentColor)
-                                        .frame(width: 28)
+                                    ThemeSwatch(theme: t, isSelected: t == theme)
 
                                     Text(t.rawValue)
                                         .font(.system(size: 16, design: .rounded))
